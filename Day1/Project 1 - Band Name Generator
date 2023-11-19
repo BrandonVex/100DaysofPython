@@ -1,8 +1,7 @@
-# Greeting for the Band Name Generator
 print("Welcome to the Band Name Generator!")
-# 2 city is equal to first response
-city = input("What city did you grow up in?")
-# 3 pet_name will be equal to second response
-pet_name = input("What is your pet name?")
-# 4 print out a statement that combines the two variables with some aditional print statements
-print("Your new band name is" + city + " " + pet_name +"!")
+city = input("What city did you grow up in?\n")
+pet_name = input("What is your pet name?\n")
+print("Your new band name is " + city + " " + pet_name +"!")
+
+# using \n to make the response neat
+
