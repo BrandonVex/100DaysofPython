@@ -1,0 +1,29 @@
+# Names were 
+# John on input line 1
+# Adman on input line 2
+# jane on input line 3
+name1 = input("What is your name? ")
+print(name1) #This line will print the text and line 1 of the input into the output.
+name2 = input("What is your name? ")
+print(name2) #This line will only print the name on line 2 of the input pane.
+name3 = input("What is your name? ")
+print(name3)
+
+# numbers were
+# num1=2
+# num2=3
+# answer goal was 6
+num1 = int(input())
+num2 = int(input())
+print(num1 * num2)
+
+# Provide any name in the input pane below.
+# That value can be accessed using the input() function.
+# Don't put anything inside the input() function!
+# name was angela
+name1 = input()
+letter_count = len(name1)
+print(letter_count)
+
+# Easier way
+print(len(input()))
