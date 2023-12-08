@@ -1,1 +1,8 @@
-
+#Convert the two digits into seperate lines
+one = (two_digit_number[0])
+two = (two_digit_number[1])
+#Revert lines into integers for calculations
+num_one = int(one)
+num_two = int(two)
+#Print the integers = 
+print (num_one + num_two)
