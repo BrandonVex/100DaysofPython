@@ -1,8 +1,16 @@
-#Convert the two digits into seperate lines
+# Convert the two digits into seperate lines
 one = (two_digit_number[0])
 two = (two_digit_number[1])
-#Revert lines into integers for calculations
+# Revert lines into integers for calculations
 num_one = int(one)
 num_two = int(two)
-#Print the integers = 
+# Print the integers = 
 print (num_one + num_two)
+
+# How else can I do this?
+# I didn't need to convert and revert to an integer
+# These next 2 lines would've made the first 4 lines of my code to the same thing
+first_digit = int(two_digit_number[0])
+second_digit = int(two_digit_number[1])
+# print as normal
+print(first_digit + second_digit)
