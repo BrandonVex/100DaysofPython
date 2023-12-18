@@ -1,0 +1,16 @@
+# 1st input: enter height in meters e.g: 1.65
+height = input()
+# 2nd input: enter weight in kilograms e.g: 72
+weight = input()
+# 🚨 Don't change the code above 👆
+
+# Write your code below this line
+# change weight into an int
+weight_kg = int(weight)
+# change height into a float as there is a decinmal
+height_m = float(height)
+# print the calculation of bmi
+# weight divided by height squared
+# to round use the round() command at the beginning
+print(round(weight_kg / height_m ** 2))
+
