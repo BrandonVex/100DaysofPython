@@ -9,8 +9,10 @@ weight = input()
 weight_kg = int(weight)
 # change height into a float as there is a decinmal
 height_m = float(height)
-# print the calculation of bmi
 # weight divided by height squared
 # to round use the round() command at the beginning
-print(round(weight_kg / height_m ** 2))
+# make the calculation into a variable for easier use
+bmi = (round(weight_kg / height_m ** 2))
+# print the variable
+print(bmi)
 
