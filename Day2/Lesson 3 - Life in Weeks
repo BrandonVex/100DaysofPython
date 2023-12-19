@@ -1,0 +1,20 @@
+age = input()
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
+# create a program that turns your years of life into weeks
+# presume they live till 90
+
+# we have to convert age into weeks
+# so we have to subtract the X years into 90 years
+
+# year is 52 weeks
+week = 52
+# fullage is equal to 90 as death
+fullage = 90
+# convert input into integer
+age_true = int(age)
+# make calculations
+calc_age = (fullage - age_true)
+calc_age *= week
+# print the full age in weeks with f string
+print(f"You have {calc_age} weeks left.")
