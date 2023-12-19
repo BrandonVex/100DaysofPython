@@ -18,3 +18,21 @@ calc_age = (fullage - age_true)
 calc_age *= week
 # print the full age in weeks with f string
 print(f"You have {calc_age} weeks left.")
+
+
+#--------------------------------------------
+
+#easier way to complete this
+
+age = input()
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
+# create a program that turns your years of life into weeks
+# presume they live till 90
+
+# create variable for year (age has to be wrapped in int)
+years = 90 - int(age)
+# calculate the week variable by using years - int (52)
+weeks = years * 52
+# print out using f string
+print(f"You have {weeks} weeks left.")
