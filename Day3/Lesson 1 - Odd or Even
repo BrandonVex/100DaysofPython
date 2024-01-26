@@ -1,1 +1,12 @@
+# Which number do you want to check?
+number = int(input())
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
 
+# We have to set the calculations
+new_number = number % 2 
+#Now if else statement
+if new_number == 0:
+  print("This is an even number.")
+else:
+  print("This is an odd number.")
