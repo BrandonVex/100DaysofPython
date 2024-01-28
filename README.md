@@ -1,2 +1,2 @@
-Hello! This is my current project I am working on
-I will be doing the 100 days of python to exceed my python understanding
+Hello! To improve my Python skills, I am taking the complete Python pro bootcamp course from Dr. Angela Yu.
+
