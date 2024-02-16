@@ -1,0 +1,23 @@
+line1 = ["⬜️","️⬜️","️⬜️"]
+line2 = ["⬜️","⬜️","️⬜️"]
+line3 = ["⬜️️","⬜️️","⬜️️"]
+map = [line1, line2, line3]
+print("Hiding your treasure! X marks the spot.")
+position = input() # Where do you want to put the treasure?
+# 🚨 Don't change the code above 👆
+# Write your code below this row 👇
+# Make a list
+letter = position[0].lower()
+map_locate = ['a', 'b', 'c']
+# use index to get the number of list from abc a = 0, b = 1, c=2
+letter_index = map_locate.index(letter)
+# index the numbers - 1 
+number = int(position[1]) - 1
+# Map
+map[number][letter_index] = 'X'
+# the = x prints "x" in the location of the index given
+  
+
+# Write your code above this row 👆
+# 🚨 Don't change the code below 👇
+print(f"{line1}\n{line2}\n{line3}")
