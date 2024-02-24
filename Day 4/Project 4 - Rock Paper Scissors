@@ -1,0 +1,67 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+# Import Random
+import random
+
+# Create a list of the options
+options = [rock, paper, scissors]
+
+# Make sure player can choose while robot is random
+chose = input("Rock, Paper or Scissors?").lower()
+if chose == "rock":
+  print(rock)
+elif chose == "paper":
+  print(paper)
+else:
+  print(scissors)
+
+# Robot chooses random
+robot_chose = random.choice(options)
+print(robot_chose)
+
+# Compare the results
+if chose == "rock" and robot_chose == scissors:
+  print("You win!")
+elif chose == "paper" and robot_chose == rock:
+  print("You win!")
+elif chose == "scissors" and robot_chose == paper:
+  print("You win!")
+elif chose == "rock" and robot_chose == rock:
+  print("It's a draw!")
+elif chose == "paper" and robot_chose == paper:
+  print("It's a draw!")
+elif chose == "scissors" and robot_chose == scissors:
+  print("It's a draw!")
+else:
+  print("You lose!")
+
+
+
+
+
