@@ -18,4 +18,4 @@ average_height = total_height / students
 # print answers
 print("total height = " + str(total_height))
 print("number of students = " + str(students))
-print("average height = " + str(average_height))
+print("average height = " + str(int(round(average_height))))
