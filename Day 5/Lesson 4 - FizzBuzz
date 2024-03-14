@@ -1,0 +1,14 @@
+# Write your code here 👇
+for y in range(1, 101):
+# Can this number be cleanly divisible by both 3 and 5
+    if y % 3 == 0 and y % 5 == 0:
+      print("FizzBuzz")
+# Is this divisible by 5?
+    elif y % 5 == 0:
+        print("Buzz")
+# Is this divisble by 3?
+    elif y % 3 == 0:
+      print("Fizz")
+# Print All other numbers
+    else:
+        print(y)
