@@ -1,0 +1,15 @@
+# Input a list of student scores
+student_scores = input().split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+
+# Write your code below this row 👇
+# Make max
+max = student_scores[0]
+# What is the highest score?
+for high_score in student_scores:
+  if (high_score > max):
+    max = high_score
+# Print answer
+print("The highest score in the class is:", max)
+  
