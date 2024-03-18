@@ -1,0 +1,8 @@
+def my_function(): #define function
+  print("Hello")   #do this
+  print("Bye")     #then do this
+
+my_function()      #finally this
+
+
+
