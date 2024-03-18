@@ -20,3 +20,8 @@ while number_hurdles >0:
     number_hurdles -= 1
     if at_goal():
         break
+
+
+# Simpler way 
+# while not at_goal():
+#    jump()
