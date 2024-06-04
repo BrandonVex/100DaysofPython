@@ -15,7 +15,7 @@ for height in student_heights:
 # average
 average_height = round(total_height / students)
 
-# print answers
+# print answers 1
 print(f"total height = {total_height}")
 print(f"number of students = {students}")
 print(f"average height = {average_height}")
