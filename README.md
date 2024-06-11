@@ -7,7 +7,7 @@
 
 - 💬 Ask me about **why I started this journey**
 
-- ⚡ Fun fact **I hate coding! Yet I still have to do it :/**
+- ⚡ Fun fact **There is nothing fun!**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
