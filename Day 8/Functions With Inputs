@@ -1,0 +1,11 @@
+#Function that allows for input
+
+def greet_with_name(name):
+  print(f"Hello {name}")
+  print(f"How are you doing today {name}")
+  print(f"Have you ate today {name}?")
+
+greet_with_name("Brandon")
+
+#name is the parameter
+#Brandon is the argument

@@ -1,0 +1,14 @@
+def greet(name):
+  print("This Function")
+  print("Is Called")
+  print("Greet")
+
+greet()
+
+#name inside the "greet" is the input variable 
+#with the input, the answer will replace the "name" with the input
+
+#def greet(name):
+  #print("This Function") name 
+  #print("Is Called")
+  #print("Greet")
