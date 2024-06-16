@@ -10,7 +10,7 @@ def encrypt(plain_text, shift_amount):
         # find out the index of the letter
         position = alphabet.index(letter)
         # calculate new position
-        new_position = position + shift_amount
+        new_position = (position + shift_amount) % len(alphabet)
         # select letter at new position
         new_letter = alphabet[new_position]
         # variable for cipher text
