@@ -3,9 +3,12 @@ from replit import clear
 from art import logo
 print(logo)
 
+#create dictionary
 bidders = {}
+#define function to add bidders
 def add_bidder(name, bid):
   bidders[name] = bid
+#bidding record
 def find_highest_bidder(bidders):
   highest_bid = 0
   winner = ""
@@ -27,3 +30,5 @@ while more_bidders:
   else:
     more_bidders = False
     find_highest_bidder(bidders)
+    
+  
