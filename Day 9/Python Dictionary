@@ -1,0 +1,34 @@
+programming_dictionary = {
+    "Bug": "An error in a program that prevents the program from running as expected.", 
+    "Function": "A piece of code that you can easily call over and over again.",
+    "Loop": "The action of doing something over and over again.",
+    "Dictionary": "A list of key-value pairs.",
+}
+
+# Dictionaries are like a table
+# There is a "Key" for the word
+# then each key has a "Value"
+
+
+# Retrieving items from dictionary
+print(programming_dictionary["Loop"])
+
+#adding new items to a dictionary
+programming_dictionary["Nowhere" ] = "A place that doesn't exist."
+print(programming_dictionary)
+
+#Create an empty dictionary
+empty_dictionary = {}
+
+#wipe an existing dictionary
+programming_dictionary = {}
+
+#edit an item in a dictionary
+#basically redefined value
+programming_dictionary["Bug"] = "A moth in your computer."
+
+#loop through a dictionary
+for key in programming_dictionary:
+  print(key)
+  #this will print the key and the value for the second line
+  print(programming_dictionary[key])
