@@ -1,0 +1,34 @@
+def test():
+    result = 3 * 2
+    #this is the output
+    return result
+
+output = test()
+print(output)
+
+# -------------------------------
+
+# this reurns the output by replacing the first letter of the name with a capital letter
+# the title() function is used to capitalize the first letter of the name
+
+
+def format_name(first_name, last_name):
+    formated_first_name = first_name.title()
+    formatted_last_name = last_name.title()
+    return f"{formated_first_name} {formatted_last_name}"
+
+format_string = format_name ("BraNdoN", "BranDon")
+print(format_string)
+
+# the return statement is used to return the output of the function
+# the f-string is used to format the output of the function
+# the title() function is used to capitalize the first letter of the name
+# return is the end of the function
+# -------------------------------
+
+def format_name(first_name, last_name):
+  formated_first_name = first_name.title()
+  formatted_last_name = last_name.title()
+  return f"{formated_first_name} {formatted_last_name}"
+
+print(format_name("BrandoN", "BrANDOn"))

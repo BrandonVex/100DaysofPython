@@ -1,0 +1,12 @@
+def format_name(first_name, last_name):
+  if first_name == "" or last_name == "":
+    return "You didn't provide valid inputs."
+  formated_first_name = first_name.title()
+  formatted_last_name = last_name.title()
+  return f"{formated_first_name} {formatted_last_name}"
+
+print(format_name("BrandoN", "BrANDOn"))
+
+
+
+# you can use multiple returns in a function
