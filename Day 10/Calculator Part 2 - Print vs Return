@@ -6,19 +6,15 @@ print(art.logo)
 # add
 def add(n1, n2):
   return n1 + n2
-
 # subtract
 def subtract(n1, n2):
   return n1 - n2
-
 # multiply
 def multiply(n1, n2):
   return n1 * n2
-
 # divide 
 def divide(n1, n2):
   return n1 / n2
-
 # operations
 operations = {
   '+': add,
@@ -42,3 +38,12 @@ answer = Final_Calculation(number1, number2)
 
 # now to have to print out the answer
 print(f"{number1} {operation_symbol} {number2} = {answer}")
+
+# create a variable to ask if the user wants to continue
+# this is gonna need a for loop to continously calculate
+operation_symbol = input("Pick another operation: ")
+number3 = int(input("What's the next number?: "))
+Final_Calculation = operations[operation_symbol]
+second_answer = Final_Calculation(Final_Calculation(number1, number2), number3)
+
+print(f"{answer} {operation_symbol} {number3} = {second_answer}")
