@@ -1,0 +1,13 @@
+# docstrings are basically a way to create little bit of documentations
+
+# How can we create the same documentation that we can write?
+
+def format_name(first_name, last_name):
+    """Take a first and last name and format it to return the title case version of the name."""
+    if first_name == "" or last_name == "":
+        return "You didn't provide valid inputs."
+    formated_first_name = first_name.title()
+    formatted_last_name = last_name.title()
+    return f"{formated_first_name} {formatted_last_name}"
+    
+print(format_name("BrandoN", "BrANDOn"))
