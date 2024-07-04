@@ -1,0 +1,7 @@
+# return exit and ends the function
+# return can have an output
+
+def test():
+    print("Hello")
+    return
+    print("Goodbye")
