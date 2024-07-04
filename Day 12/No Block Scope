@@ -1,0 +1,8 @@
+game_level = 3
+def create_enemy():
+    enemies = ["Skeletons", "Zombies", "Aliens"]
+    if game_level < 5:
+        new_enemy = enemies[0]
+        
+# If you create na variable in a function, its only meant for the function
+# You can create functions in while loops, if statements, etc

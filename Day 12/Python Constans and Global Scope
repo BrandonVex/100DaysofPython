@@ -1,0 +1,12 @@
+# Global Constants
+# variables that are defined and never gonna be changes again
+
+# Like pi:
+
+PI = 3.14159
+URL = "https://www.google.com"
+TWITTER_HANDLE = "@placeholder"
+
+def calc():
+    print(PI)
+    

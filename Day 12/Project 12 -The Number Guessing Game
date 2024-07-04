@@ -1,0 +1,44 @@
+import random
+from art import logo
+
+print(logo)
+print("Welcome to the Number Guessing Game!")
+print("I'm thinking of a number between 1 and 100.")
+player_Choice = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
+
+computer_number = random.randint(1,100)
+
+
+def game():
+  if player_Choice == "easy":
+    player_lives = 10
+  elif player_Choice == "hard":
+    player_lives = 5
+  else:
+    print("Invalid input")
+
+  while player_lives > 0:
+    player_guess = int(input("Make a guess: "))
+    
+    if player_guess > computer_number:
+      print("Too high.")
+      print("Guess again.")
+    elif player_guess < computer_number:
+      print("Too low.")
+      print("Guess again.")
+    else:
+      win = print(f"You got it! The answer was {computer_number}.")
+      return win
+      
+    player_lives -= 1
+    print(f"You have {player_lives} attempts remaining to guess the number.")
+
+  # ask if they want to play again
+  if player_lives == 0:
+    game_continue = input("You've run out of guesses, you lose. Would you like to play again? Type 'y' or 'n': ").lower()
+    if game_continue == "y":
+      game()
+    else:
+      print("Thanks for playing!")
+      
+game()
