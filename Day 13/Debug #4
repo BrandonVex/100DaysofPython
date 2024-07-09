@@ -1,0 +1,32 @@
+# Fix the Errors
+age = input("How old are you?")
+if age > 18:
+print("You can drive at age {age}.") # this expect and indented block
+
+
+# --------------------------------------------------
+
+# this error shows up depending on your input
+# you need to cast an input to an integer for comparisons
+# age = int(input("How old are you?"))
+
+age = input("How old are you?")
+if age > 18:
+    print("You can drive at age {age}.")    
+    
+# --------------------------------------------------
+
+# now your print statement is wrong
+# you need to use f-string to print the age
+
+age = int(input("How old are you?"))
+if age > 18:
+    print(f"You can drive at age {age}.")
+    
+# --------------------------------------------------
+
+# FINAL CODE
+
+age = int(input("How old are you?"))
+if age > 18:
+    print(f"You can drive at age {age}.")

@@ -1,0 +1,22 @@
+# # Play Computer
+year = int(input("What's your year of birth?"))
+if year > 1980 and year < 1994:
+    print("You are a millenial.")
+elif year > 1994:
+    print("You are a Gen Z.")
+    
+# year = 1994
+# if year > 1980 = True 
+# if year is < 1994 = False
+
+# if 1994 is > 1994 = false
+# both conditions are false so it will print nothing
+
+# # Fix the Errors
+
+year = int(input("What's your year of birth?"))
+if year > 1980 and year < 1994:
+    print("You are a millenial.")
+elif year >= 1994: # all you need is an "=" sign
+    print("You are a Gen Z.")
+
