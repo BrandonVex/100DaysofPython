@@ -1,0 +1,39 @@
+# original code 
+
+# Which year do you want to check?
+year = input()
+
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print("Leap year.")
+    else:
+      print("Not leap year.")
+  else:
+    print("Leap year.")
+else:
+  print("Not leap year.")
+  
+# =====================================
+
+# Final Code
+
+# Which year do you want to check?
+year = int(input())
+
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print("Leap year.")
+    else:
+      print("Not leap year.")
+  else:
+    print("Leap year.")
+else:
+  print("Not leap year.")
+  
+  
+# error is on line 22
+# with print on line 24 - you see that its a string trying to be printed as an int
+# you need to cast the input to an integer
+# year = int(input())
