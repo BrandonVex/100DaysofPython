@@ -1,0 +1,72 @@
+# Higher or Lower game
+
+# We have to import the random module
+import random 
+
+# Import first art
+from art import logo
+from art import vs
+from game_data import data
+
+# Create function for random choice of data from game_data
+def random_choice():
+    choice1 = random.choice(data)
+    choice2 = random.choice(data)
+    # Ensure choice1 and choice2 are not the same
+    while choice1 == choice2:
+        choice2 = random.choice(data)
+    return choice1, choice2
+
+# Create a variable for seeing if one is higher than the other
+def higher_or_lower(choice1, choice2):
+    if choice1['follower_count'] > choice2['follower_count']:
+        return 'A'
+    else:
+        return 'B'
+
+# Create function for game
+def game():
+    # Print logo
+    print(logo)
+    score = 0
+    choice1, choice2 = random_choice()
+    
+    while True:
+        # Display the current comparison choices to the player
+        print(f"Compare A: {choice1['name']}, a {choice1['description']}, from {choice1['country']}.\n{vs}\nAgainst B: {choice2['name']}, a {choice2['description']}, from {choice2['country']}.")
+
+        # Ask the user to guess which choice has more followers
+        user_choice = input("Who has more followers? Type 'A' or 'B': ").upper()
+        # Determine the correct answer based on follower counts
+        correct_answer = higher_or_lower(choice1, choice2)
+        
+        if user_choice == correct_answer:
+            # If the user's choice is correct, increment the score
+            score += 1
+            print(f"You're right! Current score: {score}.")
+            # Move choice2 to choice1, and get a new random choice2
+            choice1 = choice2
+            choice2 = random.choice(data)
+            # Ensure choice1 and choice2 are not the same
+            while choice1 == choice2:
+                choice2 = random.choice(data)
+        else:
+            # If the user's choice is incorrect, end the game and display the final score
+            print(f"Sorry, that's wrong. Final score: {score}.")
+            break
+    
+    play_again()
+
+# Create a function to see if they want to play again
+def play_again():
+    play = input("Do you want to play again? Type 'yes' or 'no': ").lower()
+    if play == 'yes':
+        game()
+    else:
+        print("Goodbye!")
+
+# Start the game
+game()
+
+
+
