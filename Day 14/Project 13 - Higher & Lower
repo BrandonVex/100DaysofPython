@@ -68,5 +68,7 @@ def play_again():
 # Start the game
 game()
 
-
+# why does choice b always become choice a?
+# I think it's because I'm not reassigning choice1 to choice2, so choice2 is always the new choice. I need to reassign choice1 to choice2 before getting a new choice2.
+# I also need to ensure that choice1 and choice2 are not the same. I can do this by using a while loop to keep getting a new choice2 until it is different from choice1.
 
