@@ -1,0 +1,90 @@
+from main import MENU, resources  # Assuming MENU and resources are defined and imported from main.py
+
+# Dictionary of coins
+coins_value = [
+    {"name": "quarters", "value": 0.25},
+    {"name": "dimes", "value": 0.10},
+    {"name": "nickels", "value": 0.05},
+    {"name": "pennies", "value": 0.01},
+]
+
+# Define report function
+def report():
+    print(f"Water: {resources['water']}ml")
+    print(f"Milk: {resources['milk']}ml")
+    print(f"Coffee: {resources['coffee']}g")
+    print(f"Money: ${resources.get('money', 0):.2f}")
+
+# Define add resources function
+def add_resources():
+    resources["water"] += int(input("How much water would you like to add? "))
+    resources["milk"] += int(input("How much milk would you like to add? "))
+    resources["coffee"] += int(input("How much coffee would you like to add? "))
+
+# Check if resources are sufficient
+def check_resources(coffee):
+    for item in coffee["ingredients"]:
+        if coffee["ingredients"][item] > resources.get(item, 0):
+            print(f"Sorry, there is not enough {item}.")
+            return False
+    return True
+
+# Check if transaction is successful
+def check_transaction(coffee):
+    cost = coffee["cost"]
+    print(f"The cost of the coffee is ${cost:.2f}.")
+    quarters = int(input("How many quarters would you like to insert? "))
+    dimes = int(input("How many dimes would you like to insert? "))
+    nickels = int(input("How many nickels would you like to insert? "))
+    pennies = int(input("How many pennies would you like to insert? "))
+    total = (quarters * 0.25) + (dimes * 0.10) + (nickels * 0.05) + (pennies * 0.01)
+    if total >= cost:
+        change = total - cost
+        print(f"Here is your change: ${change:.2f}.")
+        resources["money"] = resources.get("money", 0) + cost
+        return True
+    else:
+        print("Sorry, that is not enough money. Money refunded.")
+        return False
+
+# Make coffee
+def make_coffee(coffee):
+    for item in coffee["ingredients"]:
+        resources[item] -= coffee["ingredients"][item]
+    print("Here is your coffee. Enjoy!")
+    
+# withdraw money from the machine
+def withdraw_money():
+    money = resources.get("money", 0)
+    resources["money"] = 0
+    return money
+
+# Main loop to handle user inputs
+def main():
+    while True:
+        print("Welcome to the Coffee Machine!")
+        choice = input("What would you like to drink today? (espresso/latte/cappuccino/report/off/add): ").lower()
+        if choice == "off":
+            break
+        elif choice == "report":
+            report()
+        elif choice == "withdraw":
+            print(f"Here is your money: ${withdraw_money():.2f}")
+        elif choice == "add":
+            add_resources()
+        elif choice in MENU:
+            coffee = MENU[choice]
+            if check_resources(coffee):
+                if check_transaction(coffee):
+                    make_coffee(coffee)
+        else:
+            print("Invalid choice. Please choose again.")
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
