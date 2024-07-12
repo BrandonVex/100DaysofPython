@@ -1,42 +1,41 @@
 # Higher or Lower game
 
-# We have to import the random module
-import random 
-
-# Import first art
-from art import logo
-from art import vs
+import random
+from replit import clear  # Import the clear function to clear the console screen
+from art import logo, vs
 from game_data import data
 
-# Create function for random choice of data from game_data
 def random_choice():
+    # Randomly choose two different accounts from the game data
     choice1 = random.choice(data)
     choice2 = random.choice(data)
-    # Ensure choice1 and choice2 are not the same
     while choice1 == choice2:
         choice2 = random.choice(data)
     return choice1, choice2
 
-# Create a variable for seeing if one is higher than the other
 def higher_or_lower(choice1, choice2):
+    # Compare the follower counts of the two choices
     if choice1['follower_count'] > choice2['follower_count']:
         return 'A'
     else:
         return 'B'
 
-# Create function for game
 def game():
-    # Print logo
+    # Print the game logo
     print(logo)
     score = 0
     choice1, choice2 = random_choice()
     
     while True:
+        clear()  # Clear the screen at the start of each round
+        print(logo)  # Print the game logo again after clearing the screen
+
         # Display the current comparison choices to the player
         print(f"Compare A: {choice1['name']}, a {choice1['description']}, from {choice1['country']}.\n{vs}\nAgainst B: {choice2['name']}, a {choice2['description']}, from {choice2['country']}.")
 
         # Ask the user to guess which choice has more followers
         user_choice = input("Who has more followers? Type 'A' or 'B': ").upper()
+        
         # Determine the correct answer based on follower counts
         correct_answer = higher_or_lower(choice1, choice2)
         
@@ -55,19 +54,20 @@ def game():
             print(f"Sorry, that's wrong. Final score: {score}.")
             break
     
-    play_again()
+    play_again()  # Ask the user if they want to play again
 
-# Create a function to see if they want to play again
 def play_again():
+    # Ask the player if they want to play again
     play = input("Do you want to play again? Type 'yes' or 'no': ").lower()
     if play == 'yes':
-        game()
+        game()  # Restart the game if the player wants to play again
     else:
-        print("Goodbye!")
+        print("Goodbye!")  # End the game if the player does not want to play again
 
-# Start the game
+# Start the game for the first time
 game()
 
+    
 # why does choice b always become choice a?
 # I think it's because I'm not reassigning choice1 to choice2, so choice2 is always the new choice. I need to reassign choice1 to choice2 before getting a new choice2.
 # I also need to ensure that choice1 and choice2 are not the same. I can do this by using a while loop to keep getting a new choice2 until it is different from choice1.
