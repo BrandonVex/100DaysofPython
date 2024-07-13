@@ -1,0 +1,9 @@
+# Object is just a way of combining some piece of data and some type of functionality
+# Can have many objects of the same type
+# Can have many objects of different types
+
+# class is a blueprint for creating objects
+# objects are what we use in the code
+
+car = CarBlueprint() # car is the object, carblueprint is the class
+
