@@ -63,7 +63,7 @@ def withdraw_money():
 def main():
     while True:
         print("Welcome to the Coffee Machine!")
-        choice = input("What would you like to drink today? (espresso/latte/cappuccino/report/off/add): ").lower()
+        choice = input("What would you like to drink today? (espresso/latte/cappuccino/report/off/add/withdraw): ").lower()
         if choice == "off":
             break
         elif choice == "report":
