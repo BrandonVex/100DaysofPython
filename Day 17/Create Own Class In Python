@@ -1,0 +1,85 @@
+class User:
+    pass
+
+user_1 = User()
+
+#PascalCase
+#camelCase
+#snake_case
+
+# --------------------------------------------
+
+# Create Attributes
+
+user1.id = "001"
+user1.username = "BRANDON"
+
+print(user1.id)
+
+# --------------------------------------------
+
+# new user
+
+user2 = User()
+user2.id = "002"
+user2.username = "JACK"
+
+# --------------------------------------------
+
+# Constructor
+# Constructor is a special method that is called when an object is created
+# __init__ is a constructor that is called when an object is created and initialized
+class User:
+    def __init__(self):
+        print("New User Created")
+        # this is a constructor that prints "New User Created" when a new object is created
+        
+# --------------------------------------------
+
+# attributes in constructor
+class User:
+    def __init__(self, id, username):
+        self.id = id
+        self.username = username
+        self.followers = 0
+        self.following = 0
+    # self is a reference to the object itself
+    # user is added to the followers and following attributes
+    # now followers will either add or subtract from the user's followers
+    def follow(self, user):
+        user.followers += 1
+        self.followers += 1
+        
+user_1 = User("001", "BRANDON")
+user_2 = User("002", "JACK")
+user_3 = User("003", "JILL")
+user_4 = User("004", "JAMES")
+user_5 = User("005", "JENNY")
+
+print(user_1.followers)
+print(user_2.followers)
+print(user_3.followers)
+# --------------------------------------------
+
+# add methods to class
+# what the object does
+
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+    # needs self to access the object's attributes
+    def drive(self):
+        print("Car is moving")
+        
+    def stop(self):
+        print("Car is stopped")
+        
+car_1 = Car("Toyota", "Corolla")
+car_2 = Car("Honda", "Civic")
+car_3 = Car("Ford", "Fiesta")
+car_4 = Car("Chevy", "Camaro")
+car_5 = Car("Dodge", "Charger")
+
+# --------------------------------------------
+# Question: Create a class called "Person" with attributes name and age
