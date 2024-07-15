@@ -1,8 +1,19 @@
 from question_model import Question
 from data import question_data
+from quiz_brain import QuizBrain
 
-question_Bank = [
-    Question(question["text"], question["answer"]) for question in question_data
-]
+# question bank for list of objects
+question_Bank = []
+for question in question_data:
+    question_text = question["text"]
+    question_answer = question["answer"]
+    new_question = Question(question_text, question_answer)
+    question_Bank.append(new_question)
 
-print(question_Bank[0].text)
+# bring up one question at a time
+quiz = QuizBrain(question_Bank)
+
+while quiz.still_has_questions():
+    quiz.next_question()
+    
+quiz.final_score()
