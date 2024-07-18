@@ -1,0 +1,33 @@
+from turtle import Turtle
+from turtle import Screen
+#tkinter is used to make python GUI
+#turtle is used to make graphics
+
+pet_turtle = Turtle()
+pet_turtle.shape("turtle") # changes the shape of the turtle
+pet_turtle.color("DarkSeaGreen3") # changes the color of the turtle
+pet_turtle.forward(100) # moves the turtle forward by 100 units
+pet_turtle.right(90) # turns the turtle right by 90 degrees
+pet_turtle.forward(100) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+screen = Screen()
+screen.exitonclick()
+
