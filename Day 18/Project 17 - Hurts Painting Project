@@ -1,0 +1,61 @@
+##We talk about this in the video tutorials##
+import colorgram
+import turtle as t
+
+
+# starting code
+colors = colorgram.extract('image.jpg', 30)
+for color in colors:
+    r = color.rgb.r
+    g = color.rgb.g
+    b = color.rgb.b
+    new_color = (r, g, b)
+    rgb_colors.append(new_color)
+
+
+# define turle object
+def turtle_dot ():
+    tim = t.Turtle()
+    t.colormode(255)
+    tim.penup()
+    tim.hideturtle()
+    tim.speed("fastest")
+    tim.setheading(225)
+    tim.forward(300)
+    tim.setheading(0)
+    for _ in range(10):
+        for _ in range(10):
+            tim.dot(20, colors[random.randint(0, 29)])
+            tim.forward(50)
+        tim.left(90)
+        tim.forward(50)
+        tim.left(90)
+        tim.forward(500)
+        tim.right(180)
+    
+# start
+turtle_dot()
+
+# screen exit
+screen = t.Screen()
+screen.exitonclick()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# screen exit
+screen = t.Screen()
+screen.exitonclick()

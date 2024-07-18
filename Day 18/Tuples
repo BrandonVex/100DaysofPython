@@ -1,0 +1,17 @@
+# tuples are similar to lists
+# create a new tuple
+my_tuple = (1, 3, 8)
+
+# to name the index
+my_tuple[0] # = 1
+my_tuple[1] # = 3
+my_tuple[2] # = 8
+
+# tuples cant change values
+my_tuple[1] = 5 # = TypeError: 'tuple' object does not support item assignment
+
+# you can asign tuples to lists
+list(my_tuple)
+
+# rgb
+color = (34, 78, 90)
