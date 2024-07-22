@@ -1,0 +1,39 @@
+from turtle import Turtle, Screen
+ 
+tim = Turtle()
+screen = Screen()
+
+
+def move_forwards():
+    tim.forward(10)
+    
+#this listens to the screen for any key press
+screen.listen()
+# to bind a keystroke to a function, use the onkey() method
+screen.onkey(key="space", fun=move_forwards)
+#add exit onclick
+screen.exitonclick()
+
+
+# -----------------------------
+# higher order function
+# this is a function that can take another function as an argument
+# example
+
+def add(n, m):
+    return n + m
+
+def subtract(n, m):
+    return n - m
+
+def multiply(n, m):
+    return n * m
+
+def divide(n, m):
+    return n / m
+
+def calculator(n, m, func):
+    return func(n, m)
+
+result = calculator(2, 3, add)
+print(result)

@@ -1,0 +1,54 @@
+from turtle import Turtle, Screen
+import random
+
+# screen setup
+race_on = False
+screen = Screen()
+screen.setup(width=500, height=400)
+user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: ")
+colors = ["red", "blue", "green", "yellow", "purple", "orange"]
+y_positions = [-70, -40, -10, 20, 50, 80]
+all_turtles = []
+
+
+# set the colors for the turtles
+for turtle_index in range(0, 6):
+    new_turtle = Turtle(shape="turtle")
+    new_turtle.color(colors[turtle_index])
+    new_turtle.penup()
+    new_turtle.goto(x=-230, y=y_positions[turtle_index])
+    all_turtles.append(new_turtle)
+
+# turtles to start moving
+def move_turtle(turtle):
+    turtle.forward(random.randint(0, 10))
+    
+# check if the user has made a bet
+if user_bet:
+    race_on = True
+    
+    # create a loop to keep the game running
+while race_on:
+    # update the screen
+    screen.update()
+    
+    # loop through all the turtles
+    for turtle in all_turtles:
+        # first tirtle to reach the end of the screen stop the while loop
+        if turtle.xcor() > 230:
+            # turn the game off
+            race_on = False
+            # pen color of the winning turtle
+            winner_color = turtle.pencolor()
+            # check if the user bet is the same as the winning turtle
+            if winner_color == user_bet:
+                print(f"You've won! The {winner_color} turtle is the winner!")
+            else:
+                print(f"You've lost! The {winner_color} turtle is the winner")
+            
+        # random distance for the turtle to move
+        random_distance = random.randint(0, 10)
+        turtle.forward(random_distance)
+
+# exit the screen
+screen.exitonclick()

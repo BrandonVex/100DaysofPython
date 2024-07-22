@@ -1,0 +1,52 @@
+from turtle import Turtle, Screen
+
+tim = Turtle()
+screen = Screen()
+
+# forward function
+def move_forwards():
+    tim.forward(10)
+    
+# backward function
+def move_backwards():
+    tim.backward(10)
+
+# clockwise function
+def move_clockwise():
+    new_heading = tim.heading() - 10
+    tim.setheading(new_heading)
+
+# counter-clockwise function
+def move_counter_clockwise():
+    new_heading = tim.heading() + 10
+    tim.setheading(new_heading)
+    
+# clear screen function
+def clear_screen():
+    tim.clear()
+    tim.penup()
+    tim.home()
+    tim.pendown()
+    
+# close screen function
+def close_screen():
+    screen.bye()
+    
+# Listening features
+screen.listen()
+
+# w key will move the turtle forward
+screen.onkey(move_forwards, "w")
+# s key will move the turtle backwards
+screen.onkey(move_backwards, "s")
+# a key will move the turtle counter-clockwise
+screen.onkey(move_counter_clockwise, "a")
+# d key will move the turtle clockwise
+screen.onkey(move_clockwise, "d")
+# c key will clear the screen
+screen.onkey(clear_screen, "c")
+# q key will close the screen 
+screen.onkey(close_screen, "q")
+
+# screen exit
+screen.exitonclick()
