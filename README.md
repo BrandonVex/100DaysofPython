@@ -35,6 +35,7 @@
           <li>Blackjack Project: A command-line game simulating the classic card game.</li>
           <li>Coffee Machine Project: A simulation of a coffee machine with functionalities to select and brew different types of coffee.</li>
           <li>Turtle Race Project: Using the Turtle Python package to create a race using OOP programming methods.</li>
+          <li>Snake Game: Using multiple files, classes, class inhertiance and slicing to create the popular snake game</li>
         </ul>
       </li>
     </ul>
