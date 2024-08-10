@@ -27,3 +27,5 @@ while game_on:
 
 # screen onclick
 screen.exitonclick()
+
+# AFK < -----------------------
