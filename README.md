@@ -36,6 +36,7 @@
           <li>Coffee Machine Project: A simulation of a coffee machine with functionalities to select and brew different types of coffee.</li>
           <li>Turtle Race Project: Using the Turtle Python package to create a race using OOP programming methods.</li>
           <li>Snake Game: Using multiple files, classes, class inhertiance and slicing to create the popular snake game</li>
+          <li>Pong: Learned how to use OOP programming to bounce a ball and concurrently keep track of score</li>
         </ul>
       </li>
     </ul>
