@@ -20,8 +20,13 @@
       <li>Simple programs and exercises</li>
       <li><strong>Completed Projects:</strong>
         <ul>
-          <li>Silent Auction Project: An auction system where users can place bids silently.</li>
-          <li>Treasure Hunt Project: A game where users search for hidden treasure based on clues.</li>
+          <li>Silent Auction Project: Developed an auction system where users can place bids silently, with features for setting minimum bids and displaying the highest bidder at the end.</li>
+          <li>Treasure Hunt Project: Created a text-based game where users search for hidden treasure based on directional clues, integrating loops and conditional logic to guide the player through the game.</li>
+          <li>Hangman Project: Implemented the classic Hangman game, where players guess letters to complete a word, incorporating random word selection, input validation, and tracking of incorrect guesses using a visual hangman.</li>
+          <li>Caeser Cipher Project: Built an encryption and decryption tool using the Caesar Cipher method, which shifts letters in a message by a fixed number of positions, allowing users to secure their messages with simple text-based encryption.</li> 
+          <li>Calculator Project: Developed a basic command-line calculator that can perform addition, subtraction, multiplication, and division, emphasizing function-based programming and user input handling.</li>
+          <li>Higher Or Lower Project: Created a comparison game where players must guess which of two items (e.g., celebrities) has a higher value (e.g., followers), utilizing random data and input comparison to determine the correct answer.</li>
+          <li>Reeborg's World: Solved various challenges in Reeborg's World, a Python-based online platform for learning coding logic and loops by programming a robot to navigate mazes.</li>
         </ul>
       </li>
     </ul>
@@ -30,13 +35,14 @@
     <ul>
       <li>More complex programs</li>
       <li>Introduction to data structures and algorithms</li>
+      <li>Introduction into OOP programming</li>
       <li><strong>Completed Projects:</strong>
         <ul>
-          <li>Blackjack Project: A command-line game simulating the classic card game.</li>
-          <li>Coffee Machine Project: A simulation of a coffee machine with functionalities to select and brew different types of coffee.</li>
-          <li>Turtle Race Project: Using the Turtle Python package to create a race using OOP programming methods.</li>
-          <li>Snake Game: Using multiple files, classes, class inhertiance and slicing to create the popular snake game</li>
-          <li>Pong: Learned how to use OOP programming to bounce a ball and concurrently keep track of score</li>
+          <li>Blackjack Project: Built a command-line version of the Blackjack card game, where users can play against a dealer, implementing card shuffling, scoring, and conditional logic to manage the flow of the game.</li>
+          <li>Coffee Machine Project: Simulated a coffee machine with functionalities for selecting and brewing different types of coffee, managing resources (water, coffee, milk), and handling transactions, reinforcing the use of functions, loops, and dictionaries.</li>
+          <li>Turtle Race Project: Developed a race simulation using the Turtle graphics library in Python, where users can bet on turtles, and the race outcome is determined by random movement, introducing object-oriented programming concepts.</li>
+          <li>Snake Project: Implemented the classic Snake game using OOP principles, where the snake grows longer as it eats food, with collision detection and score tracking, spread across multiple files with classes for the snake, food, and game logic.</li>
+          <li>Pong Project: Created a two-player Pong game using OOP in Python, where players control paddles to bounce a ball back and forth, with scoring and ball speed adjustments, emphasizing game loop management and class interaction.</li>
         </ul>
       </li>
     </ul>
