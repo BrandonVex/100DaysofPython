@@ -1,5 +1,6 @@
 from turtle import Turtle
 
+#food class
 class Food(Turtle):
     
     def __init__(self):

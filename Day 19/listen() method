@@ -18,7 +18,7 @@ screen.exitonclick()
 # -----------------------------
 # higher order function
 # this is a function that can take another function as an argument
-# example
+# example.
 
 def add(n, m):
     return n + m

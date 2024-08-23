@@ -7,7 +7,7 @@ tim = t.Turtle()
 colors = ["red", "green", "blue", "yellow", "purple", "orange", "pink", "black", "white", "brown"]
 
 # draw shapes
-# def a function that draws a shape with a given number of sides
+# def a function that draws a shape with a given number of sides.
 def draw_shape(num_sides):
     angle = 360 / num_sides
     for _ in range(num_sides):

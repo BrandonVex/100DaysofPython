@@ -59,7 +59,7 @@ user_5 = User("005", "JENNY")
 print(user_1.followers)
 print(user_2.followers)
 print(user_3.followers)
-# --------------------------------------------
+# ---------------------------------------------
 
 # add methods to class
 # what the object does
