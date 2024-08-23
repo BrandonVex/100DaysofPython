@@ -36,7 +36,7 @@ operation_symbol = input("Pick an operation from the line above: ")
 # create a variable for second inputs
 number2 = int(input("What's the second number?: "))
 
-# create a variable to store the answer
+# create a variable to store the answer.
 Final_Calculation = operations[operation_symbol]
 answer = Final_Calculation(number1, number2)
 

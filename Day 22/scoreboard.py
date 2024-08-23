@@ -28,4 +28,4 @@ class Scoreboard(Turtle):
 
 
         
-# scoreboard = Scoreboard()
+# scoreboard = Scoreboard() .

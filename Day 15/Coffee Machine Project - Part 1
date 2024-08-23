@@ -15,7 +15,7 @@ def report():
     print(f"Coffee: {resources['coffee']}g")
     print(f"Money: ${resources.get('money', 0):.2f}")
 
-# Define add resources function
+# Define add resources function.
 def add_resources():
     resources["water"] += int(input("How much water would you like to add? "))
     resources["milk"] += int(input("How much milk would you like to add? "))

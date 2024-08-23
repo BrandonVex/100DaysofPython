@@ -2,7 +2,7 @@
 student_heights = input().split()
 for n in range(0, len(student_heights)):
     student_heights[n] = int(student_heights[n])
-# 🚨 Don't change the code above 👆
+# 🚨 Don't change the code above 👆.
 # calculate sum of all heights
 total_height = sum(student_heights)
 

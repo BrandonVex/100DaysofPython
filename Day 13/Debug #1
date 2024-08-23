@@ -13,7 +13,7 @@ Once  i = 20 than print "you got it:"
 Problem: once I = 20 doesnt print in the console
 Fix the problem by changing the range to 21 as 20 is technically 0-19
 """
-# Finish the problem
+# Finish the problem.
 def my_function():
     for i in range(1, 21):
       if i == 20:

@@ -22,5 +22,5 @@ for key in student_scores:
   else:
     student_grades[key] = "Fail"
     
-# 🚨 Don't change the code below 👇
+# 🚨 Don't change the code below 👇.
 print(student_grades)

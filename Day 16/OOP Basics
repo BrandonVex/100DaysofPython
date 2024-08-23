@@ -3,7 +3,7 @@
 # Can have many objects of different types
 
 # class is a blueprint for creating objects
-# objects are what we use in the code
+# objects are what we use in the code.
 
 car = CarBlueprint() # car is the object, carblueprint is the class
 
