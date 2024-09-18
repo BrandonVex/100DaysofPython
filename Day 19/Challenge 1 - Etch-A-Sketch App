@@ -7,7 +7,7 @@ screen = Screen()
 def move_forwards():
     tim.forward(10)
     
-# backward function
+# backward function.
 def move_backwards():
     tim.backward(10)
 

@@ -4,7 +4,7 @@ class User:
 user_1 = User()
 
 #PascalCase
-#camelCase
+#camelCase.
 #snake_case
 
 # --------------------------------------------

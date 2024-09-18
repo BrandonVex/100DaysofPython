@@ -2,7 +2,7 @@
 from turtle import Turtle
 import random
 
-# food class
+# food class.
 class Food(Turtle):
     
     def __init__(self):

@@ -3,7 +3,7 @@ import random
 
 tim = t.Turtle()
 
-# random color
+# random color.
 colors = ["red", "green", "blue", "yellow", "purple", "orange", "pink", "black", "white", "brown"]
 
 # draw shapes

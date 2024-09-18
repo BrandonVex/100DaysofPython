@@ -1,12 +1,12 @@
 # Higher or Lower game
 
 import random
-from replit import clear  # Import the clear function to clear the console screen
+from replit import clear  # .Import the clear function to clear the console screen
 from art import logo, vs
 from game_data import data
 
 def random_choice():
-    # Randomly choose two different accounts from the game data
+    # Randomly choose two different accounts from the game data.
     choice1 = random.choice(data)
     choice2 = random.choice(data)
     while choice1 == choice2:

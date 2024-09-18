@@ -21,7 +21,7 @@ class CarManager:
             # Random y position
             random_y = random.randint(-250, 250)
             new_car.goto(300, random_y)
-            # Append the new car to self.all_cars
+            # Append the new car to self.all_cars.
             self.all_cars.append(new_car)
     
     def move_cars(self):

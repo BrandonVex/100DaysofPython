@@ -1,7 +1,7 @@
 import art
 print(art.logo)
 
-# Calculator
+# Calculator.
 
 # add
 def add(n1, n2):
