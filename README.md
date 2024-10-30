@@ -43,7 +43,7 @@
           <li>Turtle Race Project: Developed a race simulation using the Turtle graphics library in Python, where users can bet on turtles, and the race outcome is determined by random movement, introducing object-oriented programming concepts.</li>
           <li>Snake Project: Implemented the classic Snake game using OOP principles, where the snake grows longer as it eats food, with collision detection and score tracking, spread across multiple files with classes for the snake, food, and game logic.</li>
           <li>Pong Project: Created a two-player Pong game using OOP in Python, where players control paddles to bounce a ball back and forth, with scoring and ball speed adjustments, emphasizing game loop management and class interaction.</li>
-          <l1>Crossy Road Project: Created a basic crossy road game using the Turtle graphics library in python. This reinforced OOP programming learning experiences.
+          <li>Crossy Road Project: Created a basic crossy road game using the Turtle graphics library in Python. This reinforced OOP programming learning experiences.</li>
         </ul>
       </li>
     </ul>
