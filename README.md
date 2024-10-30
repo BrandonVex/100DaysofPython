@@ -52,27 +52,12 @@
       <li>Introduction into OOP programming</li>
       <li><strong>Completed Projects:</strong>
         <ul>
-            <li>
-                <strong>Blackjack Project:</strong> Developed a command-line Blackjack game where users play against a dealer. This project includes card shuffling, scoring, and control flow logic to manage game progression and user interactions.
-            </li>
-            <li>
-                <strong>Coffee Machine Project:</strong> Simulated a coffee machine with options to brew various coffee types, manage resources (water, coffee, milk), and handle transactions. This project reinforced the use of functions, loops, and dictionaries for structured resource management.
-            </li>
-            <li>
-                <strong>Turtle Race Project:</strong> Created a race simulation using Python's Turtle graphics library, allowing users to bet on turtles. This project introduced object-oriented programming (OOP) concepts with classes to manage race participants and randomized movements.
-            </li>
-            <li>
-                <strong>Snake Project:</strong> Implemented the classic Snake game using OOP. The snake grows as it eats food, with collision detection and score tracking. Classes were structured for the snake, food, and game logic, reinforcing multi-file project organization and class interactions.
-            </li>
-            <li>
-                <strong>Pong Project:</strong> Created a two-player Pong game using OOP principles, where players control paddles to bounce a ball. This project involved scoring, ball speed adjustments, and game loop management, enhancing understanding of inter-class communication.
-            </li>
-            <li>
-                <strong>Crossy Road Project:</strong> Built a simplified Crossy Road game using the Turtle graphics library, reinforcing OOP concepts and handling game progression, collisions, and character movement.
-            </li>
-            <li>
-                <strong>Mail Merger Project:</strong> Automated the creation of personalized letters using a Python script that reads names from a file and generates customized letters by replacing placeholders in a template. This project focused on file handling, string replacement, and directory management to save output files.
-            </li>
+          <li>Blackjack Project: Built a command-line version of the Blackjack card game, where users can play against a dealer, implementing card shuffling, scoring, and conditional logic to manage the flow of the game.</li>
+          <li>Coffee Machine Project: Simulated a coffee machine with functionalities for selecting and brewing different types of coffee, managing resources (water, coffee, milk), and handling transactions, reinforcing the use of functions, loops, and dictionaries.</li>
+          <li>Turtle Race Project: Developed a race simulation using the Turtle graphics library in Python, where users can bet on turtles, and the race outcome is determined by random movement, introducing object-oriented programming concepts.</li>
+          <li>Snake Project: Implemented the classic Snake game using OOP principles, where the snake grows longer as it eats food, with collision detection and score tracking, spread across multiple files with classes for the snake, food, and game logic.</li>
+          <li>Pong Project: Created a two-player Pong game using OOP in Python, where players control paddles to bounce a ball back and forth, with scoring and ball speed adjustments, emphasizing game loop management and class interaction.</li>
+          <l1>Crossy Road Project: Created a basic crossy road game using the Turtle graphics library in python. This reinforced OOP programming learning experiences.
         </ul>
       </li>
     </ul>
