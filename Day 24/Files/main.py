@@ -14,6 +14,10 @@ with open("my_file.txt", mode="w") as file:
 with open("new_file.txt", mode="w") as file:
     file.write("New text.")
     
+# to open a file in another folder you can use the path
+# Files/new_file.txt will create a new file in the Files folder
+with open("Files/new_file.txt", mode="w") as file:
+    file.write("New text.")
     
     
 
