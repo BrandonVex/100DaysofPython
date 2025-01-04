@@ -73,6 +73,9 @@
           <li>
               <strong>Mail Merger Project:</strong> Automated the creation of personalized letters using a Python script that reads names from a file and generates customized letters by replacing placeholders in a template. This project focused on file handling, string replacement, and directory management to save output files.
           </li>
+          <li>
+              <strong>U.S. State Guessing Game:</strong> Used Pandas to work with massive amounts of data from various CSV files to create a US State Guessing Game. 
+          </li>
         </ul>
       </li>
     </ul>
