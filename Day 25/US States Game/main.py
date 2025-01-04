@@ -57,5 +57,5 @@ screen.exitonclick()
 # 3. record the correct guess on the map
 # 4. use a loop to allow the user to keep guessing
 # 5. record the correct guesses in a list
-# 6. keep track of the score
+# 6. keep track of the score.
 

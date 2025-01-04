@@ -13,7 +13,7 @@ def encrypt(plain_text, shift_amount):
         new_position = (position + shift_amount) % len(alphabet)
         # select letter at new position
         new_letter = alphabet[new_position]
-        # variable for cipher text
+        # variable for cipher text.
         cipher_text += new_letter
     print(f"The encoded text is {cipher_text}")
 

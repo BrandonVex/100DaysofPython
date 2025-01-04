@@ -3,7 +3,7 @@ names = names_string.split(", ")
 #each name in the input by a comma and space.
 # 🚨 Don't change the code above 👆
 
-#randomize the names
+#randomize the names.
 import random
 
 bill = random.choice(names)

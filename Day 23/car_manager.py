@@ -8,7 +8,7 @@ import random
 class CarManager:
 
     def __init__(self):
-        # Initialize self.all_cars as an instance variable
+        # Initialize self.all_cars as an instance variable.
         self.all_cars = []
         self.car_speed = STARTING_MOVE_DISTANCE
         

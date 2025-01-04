@@ -6,7 +6,7 @@ print(art.logo)
 # add
 def add(n1, n2):
   return n1 + n2
-# subtract
+# subtract.
 def subtract(n1, n2):
   return n1 - n2
 # multiply

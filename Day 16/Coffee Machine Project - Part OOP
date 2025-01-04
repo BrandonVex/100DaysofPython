@@ -4,7 +4,7 @@ from money_machine import MoneyMachine
 
 print(f"Welcome to the Coffee Machine!")
 
-# import classes from other files
+# import classes from other files.
 coffee_maker = CoffeeMaker()
 money_machine = MoneyMachine()
 menu = Menu()

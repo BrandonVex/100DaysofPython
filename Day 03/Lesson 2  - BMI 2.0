@@ -7,7 +7,7 @@ weight = int(input())
 #Write your code below this line 👇
 bmi = weight / (height * height)
 
-# Categorized Bmi to statement
+# Categorized Bmi to statement.
 if bmi < 18.5:
   print(f"Your BMI is {bmi}, you are underweight!")
 elif bmi < 25:

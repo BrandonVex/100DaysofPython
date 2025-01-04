@@ -7,7 +7,7 @@ for n in range(0, len(student_heights)):
 total_height = sum(student_heights)
 
 # find the number of students
-# must use for loop
+# must use for loop.
 students = 0
 for height in student_heights:
     students += 1

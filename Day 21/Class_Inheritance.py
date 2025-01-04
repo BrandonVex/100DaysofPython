@@ -11,7 +11,7 @@ class Fish(Animal):
         super().__init__()
 
     def breathe(self):
-        # the super() function is used to call the parent class method breathe() from the Animal class
+        # the super() function is used to call the parent class method breathe() from the Animal class.
         # this prints "Inhale, exhale."
         super().breathe()
         # this prints "doing this underwater."
